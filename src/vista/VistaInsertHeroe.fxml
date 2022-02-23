@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="511.0" prefWidth="396.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="controlador.InsertHeroeController">
+   <children>
+      <Text layoutX="111.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EDITOR" wrappingWidth="174.189453125">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Text>
+      <ComboBox layoutX="81.0" layoutY="70.0" prefWidth="150.0" />
+      <Text fontSmoothingType="LCD" layoutX="72.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NOMBRE DEL SUPERHEROE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtnomsup" layoutX="72.0" layoutY="164.0" prefHeight="25.0" prefWidth="233.0" />
+      <Text layoutX="72.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ALTER EGO">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtalterego" layoutX="72.0" layoutY="256.0" prefHeight="25.0" prefWidth="233.0" />
+      <Text layoutX="72.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRIMERA PUBLICACION">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtprimpub" layoutX="72.0" layoutY="344.0" prefHeight="25.0" prefWidth="233.0" />
+      <Text layoutX="72.0" layoutY="409.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PERSONAJE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtpersonaj" layoutX="72.0" layoutY="425.0" prefHeight="25.0" prefWidth="233.0" />
+   </children>
+</AnchorPane>
