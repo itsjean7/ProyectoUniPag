@@ -40,7 +40,7 @@ public final class Conexion {
     public boolean crearConexion() {
         try {
             Class.forName("org.postgresql.Driver");
-            conexion = DriverManager.getConnection("jdbc:postgresql://localhost:5432/comic", "postgres", "129091");
+            conexion = DriverManager.getConnection("jdbc:postgresql://localhost:5432/comic", "postgres", "1234");
             if (conexion != null) {
                 return true;
             }
@@ -91,3 +91,4 @@ public final class Conexion {
         }
     }
 }
+
