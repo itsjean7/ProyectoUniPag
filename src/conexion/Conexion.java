@@ -7,44 +7,87 @@ package conexion;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
+public final class Conexion {
 
-public class Conexion {
-    private static Connection cn =null;
-    
-    private static void conectar(){
+    private Connection conexion = null;
+
+    /**
+     * Método utilizado para recuperar el valor del atributo conexion
+     *
+     * @return conexion contiene el estado de la conexión
+     *
+     */
+    public Connection getConexion() {
+        return conexion;
+    }
+    /**
+     *Constructor para la creacion de conexion al instanciar la clase
+     */
+    public Conexion() {
+        crearConexion();
+    }
+
+    /**
+     * Método utilizado para establecer la conexión con la base de datos
+     *
+     * @return estado regresa el estado de la conexión, true si se estableció la
+     * conexión, falso en caso contrario
+     */
+    public boolean crearConexion() {
         try {
-            Class.forName("oracle.jdbc.driver.OracleDriver");
-            String url = "jdbc:oracle:thin:@localhost:1521:XE";  //@equipo>puerto>Servicio
-            cn = DriverManager.getConnection(url,"ot","ot");
-            System.out.println("conectando");
-        } catch (ClassNotFoundException | SQLException ex) {
-            Logger.getLogger(Conexion.class.getName()).log(Level.SEVERE, null, ex);
+            Class.forName("org.postgresql.Driver");
+            conexion = DriverManager.getConnection("jdbc:postgresql://localhost:5432/comic", "postgres", "129091");
+            if (conexion != null) {
+                return true;
+            }
+        } catch (SQLException ex) {
+            System.out.println("error en conexion: " + ex);
+        } catch (ClassNotFoundException ex) {
+            System.out.println(ex);
         }
-          
+        return false;
     }
 
-    public static Connection getConnection() {
-        if (cn==null){
-            conectar();   
+    /**
+     *
+     * Método utilizado para realizar las instrucciones: INSERT, DELETE y UPDATE
+     *
+     * @param sql Cadena que contiene la instrucción SQL a ejecutar
+     * @return estado regresa el estado de la ejecución, true(éxito) o
+     * false(error)
+     *
+     */
+    public boolean ejecutarSQL(String sql) {
+        try {
+            PreparedStatement sentencia = conexion.prepareStatement(sql);
+            sentencia.execute(sql);
+            return true;
+        } catch (SQLException ex) {
+            return false;
         }
-        return cn;
     }
-    
-    public static void desconectar() {
-        if (cn!=null) {
-            try {
-                if (cn.isClosed()==false) {
-                    cn.close();
-                }
-               } catch (SQLException ex) {
-                Logger.getLogger(Conexion.class.getName()).log(Level.SEVERE, null, ex);
-            }
-        }    
-    }    
-    
-    
+
+    /**
+     *
+     * Método utilizado para realizar la instrucción SELECT
+     *
+     * @param sql Cadena que contiene la instrucción SQL a ejecutar
+     * @return resultado regresa los registros generados por la consulta
+     *
+     */
+    public ResultSet ejecutarSQLSelect(String sql) {
+        ResultSet resultado;
+        try {
+            PreparedStatement sentencia = conexion.prepareStatement(sql);
+            resultado = sentencia.executeQuery();
+            return resultado;
+        } catch (SQLException ex) {
+            System.err.println("Error " + ex);
+            return null;
+        }
+    }
 }
