@@ -19,7 +19,6 @@ import javafx.scene.layout.AnchorPane;
 /**
  * FXML Controller class
  *
- * @author Shokuhou
  */
 public class FXMLuscadorController implements Initializable {
 
@@ -42,8 +41,6 @@ public class FXMLuscadorController implements Initializable {
     @FXML
     private ImageView bigbarda;
     @FXML
-    private ImageView bluebeetle;
-    @FXML
     private ImageView bluedevil;
     @FXML
     private ImageView captainatom;
@@ -62,13 +59,9 @@ public class FXMLuscadorController implements Initializable {
     @FXML
     private ImageView etrigan;
     @FXML
-    private ImageView firestorm;
-    @FXML
     private ImageView garth;
     @FXML
     private ImageView greenlantern;
-    @FXML
-    private ImageView grifetr;
     @FXML
     private ImageView guygardner;
     @FXML
@@ -84,8 +77,6 @@ public class FXMLuscadorController implements Initializable {
     @FXML
     private ImageView jessicajones;
     @FXML
-    private ImageView jhonconstantine;
-    @FXML
     private ImageView kylerayner;
     @FXML
     private ImageView missmartian;
@@ -97,10 +88,6 @@ public class FXMLuscadorController implements Initializable {
     private ImageView mrmiracle;
     @FXML
     private ImageView mrterrific;
-    @FXML
-    private ImageView nigthwing;
-    @FXML
-    private ImageView niteolw;
     @FXML
     private ImageView powergirl;
     @FXML
@@ -128,7 +115,115 @@ public class FXMLuscadorController implements Initializable {
     @FXML
     private ImageView viudanegra;
     @FXML
-    private ImageView zantana;
+    private ImageView antorchahumana;
+    @FXML
+    private ImageView avispa;
+    @FXML
+    private ImageView batwman;
+    @FXML
+    private ImageView benreilly;
+    @FXML
+    private ImageView bestia;
+    @FXML
+    private ImageView blackpanther;
+    @FXML
+    private ImageView blackwidow;
+    @FXML
+    private ImageView blade;
+    @FXML
+    private ImageView blubleetle;
+    @FXML
+    private ImageView capitanamerica;
+    @FXML
+    private ImageView caroldanvers;
+    @FXML
+    private ImageView cloakanddagger;
+    @FXML
+    private ImageView colossus;
+    @FXML
+    private ImageView daredevil;
+    @FXML
+    private ImageView elektra;
+    @FXML
+    private ImageView firestrom;
+    @FXML
+    private ImageView flashthompson;
+    @FXML
+    private ImageView flechaverde;
+    @FXML
+    private ImageView gambit;
+    @FXML
+    private ImageView ghostrider;
+    @FXML
+    private ImageView grifter;
+    @FXML
+    private ImageView havok;
+    @FXML
+    private ImageView hawkeye;
+    @FXML
+    private ImageView hercules;
+    @FXML
+    private ImageView hulk;
+    @FXML
+    private ImageView iceman;
+    @FXML
+    private ImageView invisiblewoman;
+    @FXML
+    private ImageView ironfist;
+    @FXML
+    private ImageView ironman;
+    @FXML
+    private ImageView iroman;
+    @FXML
+    private ImageView jhonconstatine;
+    @FXML
+    private ImageView kaine;
+    @FXML
+    private ImageView lukecage;
+    @FXML
+    private ImageView moonknight;
+    @FXML
+    private ImageView namor;
+    @FXML
+    private ImageView nickfury;
+    @FXML
+    private ImageView nightcrawler;
+    @FXML
+    private ImageView nightwing;
+    @FXML
+    private ImageView niteowl;
+    @FXML
+    private ImageView nova;
+    @FXML
+    private ImageView odin;
+    @FXML
+    private ImageView patriota;
+    @FXML
+    private ImageView prowler;
+    @FXML
+    private ImageView scottsummers;
+    @FXML
+    private ImageView sentry;
+    @FXML
+    private ImageView shehulk;
+    @FXML
+    private ImageView silversble;
+    @FXML
+    private ImageView silversurfer;
+    @FXML
+    private ImageView spiderman;
+    @FXML
+    private ImageView spiderwoman;
+    @FXML
+    private ImageView superman;
+    @FXML
+    private ImageView thepunisher;
+    @FXML
+    private ImageView thing;
+    @FXML
+    private ImageView wonderman;
+    @FXML
+    private ImageView zantanna;
 
     /**
      * Initializes the controller class.
