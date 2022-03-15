@@ -20,7 +20,9 @@ import javafx.scene.control.TextField;
 public class VistaVentanaHeroeController implements Initializable {
     @FXML
     private Button btnbuscar;
+    @FXML
     private TextField txfhola;
+    @FXML
     private ScrollBar scroll;
     
     @FXML
