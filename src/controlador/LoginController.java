@@ -38,8 +38,10 @@ public class LoginController implements Initializable {
         
     }   
     @FXML 
-    private void click(ActionEvent event){
-    System.out.println("ingresado");
+    private void getData(ActionEvent event){
+        System.out.println(name.getText());
+        System.out.println(password.getText());
+        JavaPostgreSql.writeToDatabase(name.getText(), password.getText());
 
     }
 
