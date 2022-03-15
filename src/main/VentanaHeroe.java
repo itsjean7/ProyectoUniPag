@@ -17,7 +17,7 @@ import javafx.stage.Stage;
 public class VentanaHeroe extends Application  {
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("VistaVentanaHeroe.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/vista/VistaVentanaHeroe.fxml"));
         
         Scene scene = new Scene(root);
         
