@@ -69,8 +69,6 @@ public class Conexion {
         PreparedStatement ps = null;
         ResultSet rs = null;
         
-        String verificarlogin ="select count (1) from usuario where name_user ='"+name+"' and  pass_user ='"+pass+"'";
-        System.out.println("verificando string verigicarlogin");
     }
     
 }

@@ -41,7 +41,6 @@ public class LoginController {
 
             
         } catch (Exception e) {
-            //TODO: handle exception
         }
 
 
