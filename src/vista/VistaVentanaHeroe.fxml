@@ -11,40 +11,40 @@
 
 <AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="400.0" style="-fx-background-color: #4682b4;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication29.FXMLDocumentController">
     <children>
-      <TextField fx:id="txfhola" layoutX="25.0" layoutY="61.0" />
-      <Text fx:id="text" layoutX="25.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Heroes:" wrappingWidth="110.966796875">
+      <TextField fx:id="txtheroes" layoutX="25.0" layoutY="61.0" />
+      <Text fx:id="lblheroes" layoutX="25.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Heroes:" wrappingWidth="110.966796875">
          <font>
             <Font size="18.0" />
          </font>
       </Text>
-      <Button layoutX="184.0" layoutY="61.0" mnemonicParsing="false" text="Buscar" />
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+      <Button fx:id="btnbuscar" layoutX="184.0" layoutY="61.0" mnemonicParsing="false" text="Buscar" />
+      <ImageView fx:id="imgarrow" fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/flechaverde.jpg" />
          </image>
       </ImageView>
       <ScrollBar fx:id="scroll" layoutX="428.0" layoutY="86.0" orientation="VERTICAL" prefHeight="447.0" prefWidth="14.0" />
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="184.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="imgbatman" fitHeight="150.0" fitWidth="200.0" layoutX="184.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/batman.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="25.0" layoutY="298.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="imgsuper" fitHeight="150.0" fitWidth="200.0" layoutX="25.0" layoutY="298.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/superman.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="194.0" layoutY="298.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="imgaraña" fitHeight="150.0" fitWidth="200.0" layoutX="194.0" layoutY="298.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/spiderman.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="476.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="imgiron" fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="476.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/ironman.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="175.0" layoutY="476.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="imgcap" fitHeight="150.0" fitWidth="200.0" layoutX="175.0" layoutY="476.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/capitanamerica.jpg" />
          </image>

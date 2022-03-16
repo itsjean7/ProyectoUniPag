@@ -33,6 +33,3 @@ public class VentanaHeroe extends Application  {
     }
     
 }
-    
-
-  

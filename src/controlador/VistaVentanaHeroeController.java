@@ -4,37 +4,44 @@
  */
 package controlador;
 
-import java.net.URL;
-import java.util.ResourceBundle;
-import javafx.event.ActionEvent;
+
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.ScrollBar;
 import javafx.scene.control.TextField;
-/**
- * FXML Controller class
- *
- * @author User
- */
-public class VistaVentanaHeroeController implements Initializable {
+import javafx.scene.image.ImageView;
+import javafx.scene.text.Text;
+
+public class VistaVentanaHeroeController {
+
     @FXML
     private Button btnbuscar;
+
     @FXML
-    private TextField txfhola;
+    private ImageView imgaraña;
+
+    @FXML
+    private ImageView imgarrow;
+
+    @FXML
+    private ImageView imgbatman;
+
+    @FXML
+    private ImageView imgcap;
+
+    @FXML
+    private ImageView imgiron;
+
+    @FXML
+    private ImageView imgsuper;
+
+    @FXML
+    private Text lblheroes;
+
     @FXML
     private ScrollBar scroll;
-    
+
     @FXML
-    private void handleButtonAction(ActionEvent event) {
-        
-    }
-    
-    @Override
-    public void initialize(URL url, ResourceBundle rb) {
-    }    
-    
+    private TextField txtheroes;
+
 }
-
-
-   
