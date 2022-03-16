@@ -1,49 +1,50 @@
 package controlador;
 
-import java.net.URL;
-import java.util.ResourceBundle;
+import java.io.IOException;
+
+import conexion.Conexion;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
+import javafx.scene.text.Text;
 
-/**
- * FXML Controller class
- *
- * @author paulg
- */
-public class LoginController implements Initializable {
+public class LoginController {
 
     @FXML
     private Button btningre;
-    @FXML
-    private Label lblusuLabel;
-    @FXML
-    private Label lblcontrLabel;
-    @FXML
-    private TextField txtusuario;
-    @FXML
-    private PasswordField pswd;
+
     @FXML
     private ImageView imgfondo;
 
+    @FXML
+    private Text lblcontra;
 
+    @FXML
+    private Text lblusuario;
 
-    @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        
-    }   
-    @FXML 
-    private void getData(ActionEvent event){
-        System.out.println(name.getText());
-        System.out.println(password.getText());
-        JavaPostgreSql.writeToDatabase(name.getText(), password.getText());
+    @FXML
+    private PasswordField pswd;
+
+    @FXML
+    private TextField txtusuario;
+
+    @FXML
+    void click(ActionEvent event) throws IOException{
+        try {
+            Conexion cn = new Conexion();
+            String n = txtusuario.getText();
+            String n1 = pswd.getText();
+            cn.validarlogin(txtusuario, pswd);
+
+            
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+
 
     }
 
-    
 }
