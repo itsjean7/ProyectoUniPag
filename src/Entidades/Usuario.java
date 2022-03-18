@@ -1,11 +1,10 @@
-package Entidades;
+﻿package Entidades;
 
 public class Usuario {
     private int iduser;
     private String user;
     private String contraseña;
 
-    
     public Usuario(int iduser, String user, String contraseña) {
         this.iduser = iduser;
         this.user = user;
@@ -29,5 +28,4 @@ public class Usuario {
     public void setContraseña(String contraseña) {
         this.contraseña = contraseña;
     }
-    
 }
