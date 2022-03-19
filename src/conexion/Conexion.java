@@ -12,6 +12,7 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import main.MainLogin;
 
+
 public class Conexion {
     public void validarlogin(String name, String pass) throws SQLException {
 
