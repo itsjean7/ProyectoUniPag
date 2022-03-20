@@ -1,9 +1,4 @@
-﻿ /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package conexion;
+﻿package conexion;
 
 import java.sql.*;
 import java.util.logging.Level;
@@ -50,24 +45,17 @@ public class Conexion {
             }
             
         } catch (Exception e) {
-            //TODO: handle exception
         }
         
     }
-
     public void validarlogin(TextField txtusuario, PasswordField pswd) {
         String url = "jdbc:postgresql://localhost:5432/javafx";
         String user = "postgresql";
         String password = "1234";
-
-        //String name = "nombre";
-        //String pass = "contraseña";
-
         String query = "INSERT INTO Usuarios (nombre, contraeña) VALUES (?, ?, ?)";
         Connection con = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
-        
     }
     
 }
